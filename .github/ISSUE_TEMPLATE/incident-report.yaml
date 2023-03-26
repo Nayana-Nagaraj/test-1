@@ -1,0 +1,22 @@
+name: Incident Report
+description: Report the Incident arised in the application 
+labels: kind/incident
+body:
+  - type: textarea
+    id: incident
+    attributes:
+      label: What happened?
+      description: |
+        Please provide as much as info possible.
+    validations:
+      required : true
+  - type: dropdown
+    attributes:
+      label: Priority 
+      options:
+        - High
+        - Medium 
+        - Low
+    validations:
+      required : true
+    
